@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <section id="stu" class="media">
+        <header>
+            <h1>
+                Logo
+            </h1>
+            <ul>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a class="tea" href="#">Teacher</a></li>
+            </ul>
+        </header>
+        <form action="" class="input" method="POST">
+            <h2><strong>LOGIN</strong></h2>
+            <input type="email" placeholder="Email" /><br>
+            <input type="password" placeholder="Password"/><br>
+            <button class="btn">Sign In</button><br>
+            <small>Need account?<a class="ml-2" href="#">Sign Up</a> </small>
+        </form>
+        <img src="proimg.jpg" id="img">
+
+    </section>
+    <div class="up">
+        <div class="media-1">
+            <header id="id-1">
+                <h1>
+                    Logo
+                </h1>
+                <ul>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#stu">Student</a></li>
+                </ul>
+            </header>
+        <form action="" method="POST" class="input">
+            <h2><strong>LOGIN</strong></h2>
+            <input type="email" placeholder="Email" /><br>
+            <input type="password" placeholder="Password"/><br>
+            <button class="btn">Sign In</button>
+           
+        </form>       
+    </div>
+    <img src="proimg.jpg" id="img">
+    </div>
+    <script>
+        const tea = document.querySelector(".tea");
+        const media=document.querySelector(".media");
+        tea.addEventListener("click",function(){
+            media.classList.toggle("active") 
+        })
+        media.addEventListener("click",function(){
+            tea.classList.remove("active") 
+        })
+    </script>
+</body>
+
+
+</html>
